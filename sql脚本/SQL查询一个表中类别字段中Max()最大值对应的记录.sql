@@ -1,0 +1,1 @@
+select * from answer as a where  click_count=(select max(b.click_count)from answer as b where a.question_id = b.question_id) GROUP BY a.question_id;

@@ -1,0 +1,1 @@
+SELECT a.*,b.* FROM player a LEFT JOIN player2alliance b ON a.id = b.player_id WHERE b.player_id IS NULL ORDER BY (a.officer_power + a.troop_power + a.technology_power + a.building_power)
